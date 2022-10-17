@@ -33,6 +33,7 @@ export const run = async () => {
 
   errors.forEach((error) => {
     console.log(chalk.red(error));
+    return;
   });
 
   if (errors.length > 0) {
